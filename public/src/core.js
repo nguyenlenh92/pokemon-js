@@ -51,7 +51,6 @@ const Game = {
     },
 
     Load: function () {
-        console.log(SceneManager.currScene);
         // choosing starter pokemon
         if (!SceneManager.isFinishedChoosing()){
             if (SceneManager.isChoosingStarterScene()){
@@ -73,8 +72,7 @@ const Game = {
             // encounter new pokemon
             if  (SceneManager.isWalkingScene() && ["RIGHT", "LEFT", "UP", "DOWN"].includes(Events.KEY)) {
                 var random = Math.floor(Math.random() * 1000);
-                console.log(random);
-                if (random < 500) {
+                if (random < 5) {
                     var pokemonObject = generateRandomPokemon();
                     this.foe = {};
                     this.foe = new NPC(pokemonObject, new Array(pokemonObject));

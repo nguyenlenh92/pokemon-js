@@ -263,8 +263,8 @@ const BattleScene = {
             }
         }
 
-        else if (Events.KEY === "YES"){
-
+        else if (Events.KEY === "SELECTED"){
+            console.log(Events.KEY)
             if (this.action == "fight"){
                 // calls fight function from battle.js
                 this.action = "normal";
@@ -361,7 +361,7 @@ const BattleScene = {
             }
 
         }
-        else if (Events.KEY === "SELECTED"){
+        else if (Events.KEY === "YES"){
             if (this.action == "normal"){
                 this.normal_attack = true;
                 this.fight_command_x = 10;

@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/Group-1-Project-3/CMSC-433-Pokemon-Game#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.2"
   }
 }
